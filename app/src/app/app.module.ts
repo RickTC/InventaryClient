@@ -4,15 +4,21 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatSidenavModule } from '@angular/material/sidenav'
+import { HomeComponent } from './home/home.component';
+import { ClientComponent } from './client/client.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HomeComponent,
+    ClientComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MatSidenavModule
   ],
   providers: [],
   bootstrap: [AppComponent]
